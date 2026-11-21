@@ -1,0 +1,9 @@
+# copy to terraform.tfvars (git-ignored) and adjust
+aws_region      = "ap-south-1"
+project_name    = "s24-personal"
+gitops_repo_url = "https://github.com/YOUR_USERNAME/s24-my-aws-demo.git"
+# private repository only:
+# gitops_repo_username = "<github-user>"
+# gitops_repo_token    = "<personal-access-token>"
+# second apply, after observability/setup-commands.sh printed it:
+# loki_push_url = "http://internal-xxxx.ap-south-1.elb.amazonaws.com/loki/api/v1/push"

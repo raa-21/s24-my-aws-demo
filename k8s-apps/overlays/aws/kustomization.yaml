@@ -1,0 +1,24 @@
+# Personal AWS copy. Initial image tags are placeholders until scripts/build-and-push.ps1 -PushGit completes.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../base
+images:
+  - name: s24/user-service
+    newName: 877348952488.dkr.ecr.ap-south-1.amazonaws.com/s24-personal/user-service
+    newTag: "pending-first-build"
+  - name: s24/catalog-service
+    newName: 877348952488.dkr.ecr.ap-south-1.amazonaws.com/s24-personal/catalog-service
+    newTag: "pending-first-build"
+  - name: s24/metadata-service
+    newName: 877348952488.dkr.ecr.ap-south-1.amazonaws.com/s24-personal/metadata-service
+    newTag: "pending-first-build"
+  - name: s24/content-delivery-api
+    newName: 877348952488.dkr.ecr.ap-south-1.amazonaws.com/s24-personal/content-delivery-api
+    newTag: "pending-first-build"
+  - name: s24/cache-manager
+    newName: 877348952488.dkr.ecr.ap-south-1.amazonaws.com/s24-personal/cache-manager
+    newTag: "pending-first-build"
+  - name: s24/progress-tracker
+    newName: 877348952488.dkr.ecr.ap-south-1.amazonaws.com/s24-personal/progress-tracker
+    newTag: "pending-first-build"
